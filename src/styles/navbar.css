@@ -1,0 +1,168 @@
+/* ===============================
+   Navbar Container
+=============================== */
+.navbar {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 40px;
+  background-color: #6b3e26;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  overflow: visible; /* important for dropdown */
+  /* position: fixed; */
+}
+
+/* ===============================
+   Logo
+=============================== */
+.navbar-logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo-img {
+  height: 40px;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+/* ===============================
+   Navbar Links
+=============================== */
+.navbar-links {
+  display: flex;
+  gap: 25px;
+}
+
+.navbar-links a {
+  color: #fff;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.navbar-links a:hover {
+  text-decoration: underline;
+  color: #f2c94c;
+}
+
+/* ===============================
+   Actions (Cart + Account)
+=============================== */
+.navbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Cart */
+.cart-icon {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.cart-img {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}
+
+.cart-badge {
+  position: absolute;
+  top: -6px;
+  right: -8px;
+  background-color: #f2c94c;
+  color: #6b3e26;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 2px 6px;
+  border-radius: 50%;
+}
+
+/* ===============================
+   Avatar Profile
+=============================== */
+.avatar-wrapper {
+  position: relative;
+  margin-left: 12px;
+}
+
+.avatar-circle {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #ff6b00;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.avatar-circle:hover {
+  transform: scale(1.1);
+}
+
+.avatar-dropdown {
+  position: absolute;
+  top: 45px;
+  right: 0;
+  width: 220px;
+  background: white;
+  border: 1px solid #ddd;
+  padding: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  z-index: 9999;
+  border-radius: 6px;
+}
+
+.avatar-dropdown p {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #333;
+}
+
+.avatar-dropdown button {
+  width: 100%;
+  padding: 6px;
+  margin-top: 8px;
+  cursor: pointer;
+  background: #6b3e26;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  transition: background 0.05s ease;
+}
+
+.avatar-dropdown button:hover {
+  background: #8b5638;
+}
+
+/* ===============================
+   Responsive Navbar
+=============================== */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px 20px;
+  }
+
+  .navbar-links {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .navbar-actions {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+}

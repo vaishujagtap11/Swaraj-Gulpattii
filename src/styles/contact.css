@@ -1,0 +1,108 @@
+.contact-page {
+  background: #fff7ed;
+  min-height: 100vh;
+  padding: 50px 20px;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.contact-page h1 {
+  text-align: center;
+  color: #6b3e26;
+  margin-bottom: 10px;
+}
+
+.contact-intro {
+  text-align: center;
+  color: #8b4513;
+  max-width: 700px;
+  margin: 0 auto 40px;
+  font-size: 1.1rem;
+}
+
+.contact-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Contact Form */
+.contact-form {
+  background: #fffaf3;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 6px 14px rgba(107, 62, 38, 0.2);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px 15px;
+  border: 1px solid #d9b48f;
+  border-radius: 6px;
+  font-size: 1rem;
+  resize: none;
+}
+
+.contact-form textarea {
+  min-height: 120px;
+}
+
+.contact-form button {
+  padding: 12px;
+  background: #8b4513;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contact-form button:hover {
+  background: #6b3e26;
+}
+
+/* Contact Info + Map */
+.contact-info {
+  background: #fffaf3;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 6px 14px rgba(107, 62, 38, 0.2);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  text-align: left;
+}
+
+.contact-info h3 {
+  color: #6b3e26;
+  margin-bottom: 10px;
+}
+
+.contact-info p {
+  color: #8b4513;
+  font-size: 1rem;
+}
+
+.contact-info iframe {
+  width: 100%;
+  height: 250px;
+  border: 0;
+  border-radius: 8px;
+  margin-top: 15px;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .contact-container {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-info iframe {
+    height: 200px;
+  }
+}

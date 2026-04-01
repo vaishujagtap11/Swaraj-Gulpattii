@@ -1,0 +1,194 @@
+/* =======================
+   CHECKOUT PAGE
+======================= */
+
+.checkout-page {
+  padding: 40px;
+  background-color: #fffaf5;
+  min-height: 100vh;
+}
+
+.checkout-page h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #6b3e26;
+}
+
+/* =======================
+   LAYOUT
+======================= */
+
+.checkout-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+@media (max-width: 768px) {
+  .checkout-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* =======================
+   ORDER SUMMARY (BILL)
+======================= */
+
+.order-summary {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.order-summary h2 {
+  text-align: center;
+  color: #6b3e26;
+  margin-bottom: 15px;
+}
+
+.bill {
+  border: 1px dashed #c9a27e;
+  padding: 15px;
+  border-radius: 8px;
+  background-color: #fffdf9;
+}
+
+.bill-header,
+.bill-row,
+.bill-total {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+}
+
+.bill-header {
+  font-weight: bold;
+  border-bottom: 2px solid #6b3e26;
+  margin-bottom: 8px;
+}
+
+.bill-row {
+  border-bottom: 1px dashed #ddd;
+  font-size: 15px;
+}
+
+.bill-total {
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #6b3e26;
+}
+
+/* =======================
+   RIGHT PANEL
+======================= */
+
+.payment-section {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.payment-section h2 {
+  text-align: center;
+  color: #6b3e26;
+  margin-bottom: 15px;
+}
+
+/* form layout */
+.payment-section form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+/* =======================
+   INPUTS
+======================= */
+
+.payment-section input,
+.payment-section textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.payment-section textarea {
+  height: 90px;
+  resize: none;
+}
+
+/* =======================
+   RADIO BUTTON ALIGN FIX
+======================= */
+
+.payment-section label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.payment-section input[type="radio"] {
+  margin: 0;
+  width: auto;
+}
+
+/* =======================
+   QR PAYMENT BOX
+======================= */
+
+.qr-box {
+  text-align: center;
+  background-color: #fffaf5;
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px dashed #c9a27e;
+}
+
+.qr-box p {
+  font-weight: 500;
+  color: #6b3e26;
+}
+
+.qr-box img {
+  width: 200px;
+  margin: 12px auto;
+  display: block;
+  border: 2px dashed #6b3e26;
+  padding: 10px;
+  border-radius: 10px;
+  background: #fff;
+}
+
+/* =======================
+   BUTTON
+======================= */
+
+.payment-section button {
+  margin-top: 10px;
+  padding: 12px;
+  font-size: 16px;
+  background-color: #6b3e26;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.payment-section button:hover {
+  background-color: #54301f;
+}
+
+.payment-section button:disabled {
+  background-color: #aaa;
+  cursor: not-allowed;
+}
